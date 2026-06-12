@@ -1,16 +1,18 @@
-import { StrictMode } from 'react'
+// import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
-import Themeprovider from './Themeprovider.jsx'
+// import { BrowserRouter } from 'react-router-dom'
+// import Themeprovider from './Themeprovider.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-   <BrowserRouter>
-   <Themeprovider>
-    <App />
-   </Themeprovider>
-   </BrowserRouter>
-  </StrictMode>,
+  // <StrictMode>
+  
+  // </StrictMode>,
+    <App myName = "NELSON"/>
 )
+ {/* <BrowserRouter>
+   {/* <Themeprovider>
+    <App />
+   </Themeprovider> */}
+   {/* </BrowserRouter> */} 
