@@ -49,16 +49,31 @@
 
 // export default App
 
-import React from 'react'
-import Contact from './components/Contact'
+import { useState } from "react";
+import Modal from "./components/Modal";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
-      <h1>App</h1>
-      <Contact  />
+    <div style={{ padding: "20px" }}>
+      <h1>React Modal Example</h1>
+
+      <button onClick={() => setIsOpen(true)}>
+        Open Modal
+      </button>
+
+      <Modal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+      >
+        <h2>Welcome!</h2>
+        <p>This is a custom React modal.</p>
+      </Modal>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
+
